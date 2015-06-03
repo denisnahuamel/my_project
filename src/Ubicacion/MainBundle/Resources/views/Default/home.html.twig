@@ -1,0 +1,25 @@
+{% extends '::base.html.twig' %}
+{%block title%}Home{%endblock%}
+{%block body%}
+<script type="text/javascript">
+	history.forward();
+</script>
+<script type="text/javascript">
+function noBack(){
+window.history.forward()
+}
+noBack();
+window.onload= noBack;
+window.onpageshow=
+function(evt){ 
+if (evt.persisted) noBack()
+}
+window.onunload=
+function(){
+void(0)
+}
+</script>
+<h1>Bienvenido</h1>
+	<p>Hola <span class="label label-primary">{{app.session.get('nombre')}}</span></p>
+	<p><a href="{{path('home_logout')}}">Salir</a></p>
+{% endblock %}

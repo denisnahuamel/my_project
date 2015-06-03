@@ -1,0 +1,21 @@
+Ubicacion\MainBundle\Entity\Usuario:
+    type: entity
+    table: null
+    repositoryClass: Ubicacion\MainBundle\Entity\UsuarioRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '100'
+        correo:
+            type: string
+            length: '100'
+        password:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }

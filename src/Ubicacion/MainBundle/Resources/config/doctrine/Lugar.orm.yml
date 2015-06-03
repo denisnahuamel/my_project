@@ -1,0 +1,28 @@
+Ubicacion\MainBundle\Entity\Lugar:
+    type: entity
+    table: null
+    repositoryClass: Ubicacion\MainBundle\Entity\LugarRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '100'
+            column: Nombre
+        categoria:
+            type: string
+            length: '100'
+            column: Categoria
+        latitud:
+            type: string
+            length: '100'
+            column: Latitud
+        longitud:
+            type: string
+            length: '100'
+            column: Longitud
+    lifecycleCallbacks: {  }

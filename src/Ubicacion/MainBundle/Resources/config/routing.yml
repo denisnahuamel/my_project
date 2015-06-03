@@ -1,0 +1,19 @@
+ubicacion_main_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UbicacionMainBundle:Default:index }
+ubicacion_main:
+    path:     /lugar
+    defaults: { _controller: UbicacionMainBundle:Mapa:ubicacion }
+home_login:
+    path:     /home
+    defaults: { _controller: UbicacionMainBundle:Login:home }
+inicio_login:
+    path:     /entrar
+    defaults: { _controller: UbicacionMainBundle:Login:login}
+home_logout:
+    path:     /salir
+    defaults: { _controller: UbicacionMainBundle:Login:logout }
+ubicacion_otro:
+    path:     /ubicacion
+    defaults: { _controller: UbicacionMainBundle:Login:ubicacion }
+
